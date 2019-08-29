@@ -29,5 +29,11 @@ roleRef:
   name: prometheus
 subjects:
 - kind: ServiceAccount
-  name: default
+  name: prometheus
+  namespace: monitoring
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: prometheus
   namespace: monitoring
